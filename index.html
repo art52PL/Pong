@@ -1,0 +1,43 @@
+<canvas></canvas>
+<div class="points" id="p1">0</div>
+<div class="points" id="p2">0</div>
+<div id="countdownDiv">Game starts in: 5</div>
+<div id="pauseDiv">Game Paused</div>
+<style>
+    div{
+        position: fixed;
+        z-index: 1;
+        color: white;
+        text-align: center;
+    }
+    #p1{
+        left: 30;
+        top: 10;
+        font-size: 50;
+    }
+    #p2{
+        right: 30;
+        top: 10;
+        font-size: 50;
+    }
+    #countdownDiv{
+        left: calc(50% - 500px);
+        top: calc(25% - 30px);
+        line-height: 100px;
+        font-size: 100;
+        width: 1000px;
+        height: 100px;
+    }
+    #pauseDiv{
+        left: calc(50% - 500px);
+        top: calc(25% - 30px);
+        line-height: 100px;
+        font-size: 100;
+        width: 1000px;
+        height: 100px;
+        background-color: #000;
+        z-index: 1;
+        display: none;
+    }
+</style>
+<script src="./index.js"></script>
